@@ -9,6 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Perfil"></activity>
+        <activity android:name=".Usuarios" />
+        <activity android:name=".Encargados" />
+        <activity android:name=".Practicas" />
+        <activity android:name=".Laboratorios" />
+        <activity android:name=".Edificios" />
+        <activity
+            android:name=".MenuPrincipal"
+            android:label="@string/title_activity_menu_principal"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
