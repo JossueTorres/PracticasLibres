@@ -11,14 +11,52 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:gravity="top|center_vertical"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="50dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            app:srcCompat="@mipmap/cutheader"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:rotation="180"
+            app:srcCompat="@mipmap/cutheader"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:gravity="center_vertical"
         android:orientation="vertical"
         android:padding="30dp">
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="159dp"
+            android:layout_width="319dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
             android:layout_marginStart="0dp"
             android:layout_marginBottom="40dp"
             app:srcCompat="@mipmap/uteclogo" />
