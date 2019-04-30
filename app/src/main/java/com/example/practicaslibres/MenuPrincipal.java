@@ -96,6 +96,8 @@ public class MenuPrincipal extends AppCompatActivity
             i = new Intent(getApplicationContext(), Perfil.class);
         }else if (id == R.id.nav_cerrar) {
             i = new Intent(getApplicationContext(), MainActivity.class);
+        }else if (id == R.id.nav_ciclos) {
+            i = new Intent(getApplicationContext(), Ciclos.class);
         }
         startActivity(i);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

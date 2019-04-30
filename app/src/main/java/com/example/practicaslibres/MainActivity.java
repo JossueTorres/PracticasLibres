@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
             edtUsuario.requestFocus();
             edtUsuario.setError("El campo Usuario es requerido");
         }else if(TextUtils.isEmpty(cla)){
-            edtUsuario.requestFocus();
-            edtUsuario.setError("El campo Clave es requerido");
+            edtClave.requestFocus();
+            edtClave.setError("El campo Clave es requerido");
         }else{
             if (usu.equals("admin") && cla.equals("123")){
                 Intent i = new Intent(getApplicationContext(), MenuPrincipal.class);

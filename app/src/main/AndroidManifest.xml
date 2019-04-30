@@ -15,6 +15,7 @@
         <activity android:name=".Practicas" />
         <activity android:name=".Laboratorios" />
         <activity android:name=".Edificios" />
+        <activity android:name=".Ciclos" />
         <activity
             android:name=".MenuPrincipal"
             android:label="@string/title_activity_menu_principal"

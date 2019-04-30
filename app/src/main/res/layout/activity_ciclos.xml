@@ -18,23 +18,22 @@
         tools:ignore="MissingConstraints">
 
         <Button
-            android:id="@+id/btnEdificio_nuevo"
+            android:id="@+id/btnCiclo_nuevo"
             android:layout_width="124dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:onClick="nuevoEdificio"
+            android:onClick="nuevoCiclo"
             android:text="Nuevo"
             android:textAlignment="center" />
 
         <ListView
-            android:id="@+id/lvListadoEdificios"
+            android:id="@+id/lvListadoCiclos"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
-            android:divider="#0C0C0C"
-            />
+            android:divider="#0C0C0C" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
