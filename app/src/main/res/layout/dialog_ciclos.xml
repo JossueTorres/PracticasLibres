@@ -19,48 +19,67 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
             android:paddingBottom="5dp"
-            android:text="EDIFICIO"
+            android:text="CICLO"
             android:textAlignment="center"
             android:textSize="18sp"
             android:typeface="sans" />
 
         <EditText
-            android:id="@+id/edtEdificio_codigo"
+            android:id="@+id/edtCiclo_codigo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:ems="10"
-            android:hint="Nombre"
+            android:hint="Código"
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/edtEdificio_nombre"
+            android:id="@+id/edtCiclo_ciclo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:ems="10"
-            android:hint="Nombre"
+            android:hint="Ciclo"
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/edtEdificio_descripcion"
+            android:id="@+id/edtCiclo_fechaInicio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
             android:ems="10"
-            android:hint="Descripcion"
-            android:inputType="textPersonName" />
+            android:hint="Fecha de inicio"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/edtCiclo_fechaFinalizacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Fecha de finalización"
+            android:inputType="date" />
+
+        <Switch
+            android:id="@+id/swCiclo_estado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estado Activo" />
 
         <Button
-            android:id="@+id/btnEdificio_guardar"
+            android:id="@+id/btnCiclo_guardar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:text="Guardar" />
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cancelar"
+            android:text="cancelar" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

@@ -8,29 +8,29 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class EdificioListAdapter extends BaseAdapter {
+public class CicloListAdapter extends BaseAdapter {
 
     private Context context;
-    private List<EdificioClase> edificiosList;
+    private List<CicloClase> ciclosList;
 
     //constructor
 
-    public EdificioListAdapter(Context context, List<EdificioClase> edificiosList) {
+    public CicloListAdapter(Context context, List<CicloClase> ciclosList) {
         this.context = context;
-        this.edificiosList = edificiosList;
+        this.ciclosList = ciclosList;
     }
 
     @Override
 
     //Metodos implementados de base adapter********************
     public int getCount() {
-        return edificiosList.size();
+        return ciclosList.size();
     }
 
     @Override
     public Object getItem(int position) {
 
-        return edificiosList.get(position);
+        return ciclosList.get(position);
     }
 
     @Override
@@ -40,16 +40,16 @@ public class EdificioListAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        View v = View.inflate(context, R.layout.items_edificios_list, null);
-        TextView tvCodigo= v.findViewById(R.id.tvEdificio_codigo);
-        TextView tvnombre = v.findViewById(R.id.tvEdificio_nombre);
+        View v = View.inflate(context, R.layout.items_ciclos_list, null);
+        TextView tvCodigo= v.findViewById(R.id.tvCiclo_codigo);
+        TextView tvCiclo = v.findViewById(R.id.tvCiclo_ciclo);
 
         //set text id para tag
-        tvCodigo.setText(edificiosList.get(position).getCodigo());
-        tvnombre.setText(edificiosList.get(position).getNombre());
+        tvCodigo.setText(ciclosList.get(position).getCodigo());
+        tvCiclo.setText(ciclosList.get(position).getCiclo());
 
-        //guardar edificios en tag
-        v.setTag(edificiosList.get(position).getId());
+        //guardar ciclos en tag
+        v.setTag(ciclosList.get(position).getId());
         return v;
     }
     //Metodos implementados de base adapter********************
