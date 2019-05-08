@@ -1,9 +1,11 @@
 package com.example.practicaslibres;
 
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -82,6 +84,8 @@ public class MenuPrincipal extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         Intent i = new Intent();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+
         if (id == R.id.nav_edificio) {
             i = new Intent(getApplicationContext(), Edificios.class);
         } else if (id == R.id.nav_lab) {
@@ -97,9 +101,10 @@ public class MenuPrincipal extends AppCompatActivity
         }else if (id == R.id.nav_cerrar) {
             i = new Intent(getApplicationContext(), MainActivity.class);
         }else if (id == R.id.nav_ciclos) {
-            i = new Intent(getApplicationContext(), Ciclos.class);
+            //i = new Intent(getApplicationContext(), Ciclos.class);
+            fragmentManager.beginTransaction().replace(R.id.Contenedor, new frac()).commit();
         }
-        startActivity(i);
+        //startActivity(i);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
