@@ -19,6 +19,10 @@ public class frac extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_frac, container, false);
+
+
     }
+
+
 
 }
